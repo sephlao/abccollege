@@ -82,15 +82,15 @@ function renderPaystab(data) {
         <li>Employee Type: ${data.employeeType == 'r' ? 'Regular' : 'Faculty'}</li>
         ${appendQualification(data.employeeType)}
         <li>Hours of Work this Month: ${data.hoursOfWork}</li>
-        <li>Gross Salary: $${data.gross}</li>
+        <li>Gross Salary: $${data.gross.toFixed(2)}</li>
         <li>
             Deductions:
             <ul>
-                <li>Health Surcharge Fee: $${data.deductions.surcharge}</li>
-                <li>Canadian Income Tax (25% of gross): $${data.deductions.cit}</li>
+                <li>Health Surcharge Fee: $${data.deductions.surcharge.toFixed(2)}</li>
+                <li>CIT (25% of gross): $${data.deductions.cit.toFixed(2)}</li>
             </ul>
         </li>
-        <li>Net Income: $${data.net}</li>
+        <li>Net Income: <strong>$${data.net.toFixed(2)}</strong></li>
     </ul>`;
 
     document.getElementById(`output`).innerHTML = htmlTemplate;
