@@ -11,35 +11,49 @@
 
 <body>
     <main>
+        <h1>Employee Payroll System</h1>
         <!--section for computation-->
         <section>
-            <form>
+            <form id="payrollForm">
                 <fieldset>
                     <legend>Enter employee details...</legend>
 
                     <div class="form-group">
                         <label for="eNum">Number</label>
-                        <input type="text" name="number" id="eNum">
+                        <input type="text" name="number" id="eNum" value="n01370825">
                     </div>
                     <div class="form-group">
                         <label for="eName">Name</label>
-                        <input type="text" name="name" id="eName">
+                        <input type="text" name="name" id="eName" value="Joseph Lao">
                     </div>
                     <div class="form-group">
                         <label for="eDepartment">Department</label>
-                        <input type="text" name="department" id="eDepartment">
+                        <input type="text" name="department" id="eDepartment" value="Information Technology">
                     </div>
                     <div class="form-group">
                         <label for="hours">Hours of Work</label>
-                        <input type="number" name="hoursOfWork" id="hours">
+                        <input type="number" name="hoursOfWork" id="hours" value="140">
                     </div>
 
                     <div class="form-group">
-                        <input type="radio" name="eType" value="r" id="regular" checked>
+                        <input type="radio" name="employeeType" value="r" id="regular" checked>
                         <label for="regular">Regular</label>
 
-                        <input type="radio" name="eType" value="f" id="faculty">
+                        <input type="radio" name="employeeType" value="f" id="faculty">
                         <label for="faculty">Faculty</label>
+                    </div>
+
+                    <div class="form-group" id="fixedSalary">
+                        <label for="salary">Fixed Salary</label>
+                        <input type="number" name="fixedSalary" value="3000" id="salary">
+                    </div>
+
+                    <div class="form-group" id="qualificationCode">
+                        <input type="radio" name="qualification" value="m" id="masters" checked>
+                        <label for="masters">Masters Degree</label>
+
+                        <input type="radio" name="qualification" value="b" id="bachelors">
+                        <label for="bachelors">Bachelors Degree</label>
                     </div>
 
                     <button>Get payroll</button>
@@ -48,10 +62,22 @@
         </section>
 
         <!--section for output-->
-        <section></section>
+        <section>
+            <h2>Paystab:</h2>
+            <div id="output">
+                <ul>
+                    <li>Employee Number: N01370825</li>
+                    <li>Name: Joseph Lao</li>
+                    <li>Department: Information Technology</li>
+                    <li>Hours of Work this Month: 140</li>
+                    <li>Employee Type: Regular</li>
+                    <li>Fixed Salary: $3000</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

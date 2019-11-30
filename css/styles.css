@@ -1,43 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Solway:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-
+body {
+  font-family: "Solway", "Times New Roman", Times, serif;
 }
 
 main {
-    max-width: 30rem;
-    margin: 1em auto;
+  max-width: 30rem;
+  margin: 1em auto;
+}
+
+section {
+  margin: 1em 0;
 }
 
 fieldset {
-    padding: 1em;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+    margin: .25em 0;
 }
 
 input[type="text"],
-input[type="number"]{
-    padding: .25em;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+input[type="number"] {
+  padding: 0.5em;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-label[for="regular"] {
-    margin-right: 1em;
+label[for="regular"],
+label[for="masters"] {
+  margin-right: 1em;
 }
 
 button {
-    margin: .5em;
-    padding: .75em;
+  margin: 0.5em;
+  padding: 0.75em;
+  text-transform: uppercase;
 }
 
 .form-group {
-    margin: .5em;
+  margin: 0.5em;
 }
 
 label {
-    font-size: .8em;
+  font-size: 0.8em;
+}
+
+.hide,
+.form-group#qualificationCode {
+  display: none;
+}
+
+.show,
+.show#qualificationCode {
+  display: block;
 }
