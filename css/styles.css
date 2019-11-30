@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+}
+
+main {
+    max-width: 30rem;
+    margin: 1em auto;
+}
+
+fieldset {
+    padding: 1em;
+}
+
+input[type="text"],
+input[type="number"]{
+    padding: .25em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label[for="regular"] {
+    margin-right: 1em;
+}
+
+button {
+    margin: .5em;
+    padding: .75em;
+}
+
+.form-group {
+    margin: .5em;
+}
+
+label {
+    font-size: .8em;
+}
