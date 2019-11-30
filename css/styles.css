@@ -26,6 +26,10 @@ ul {
   list-style: none;
 }
 
+li > ul {
+    padding-left: 2.5em;
+}
+
 li {
     margin: .25em 0;
 }
