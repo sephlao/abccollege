@@ -88,6 +88,10 @@ label {
   font-size: 0.8em;
 }
 
+strong {
+  color: #2B4162;
+}
+
 .hide,
 .form-group#qualificationCode {
   display: none;
